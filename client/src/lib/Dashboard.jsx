@@ -1,9 +1,10 @@
 import Menu from './Menu'
 
 function Dashboard() {
+    
     return (
         <>
-            <Menu page="Dashboard"></Menu>
+            <Menu page="dashboard"></Menu>
         </>
     )
 }
