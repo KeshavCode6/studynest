@@ -5,6 +5,10 @@ function CalculateGrade() {
     return (
         <>
             <Menu page="calculateGrade"></Menu>
+
+            <div className="content">
+                <p>Hi</p>
+            </div>
         </>
     )
 }

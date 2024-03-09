@@ -1,4 +1,6 @@
-import * as Icons from "./Icons";
+import React from 'react';
+
+import * as Icons from './Icons';
 
 import '../styles/style.css';
 
@@ -10,59 +12,50 @@ function Menu(props) {
 
         const capitalizedString = string.charAt(0).toUpperCase() + string.slice(1);
         const wordsArray = capitalizedString.split(/(?=[A-Z])/);
-        const title = wordsArray.join(' ');
+        const title = wordsArray.join(" ");
         
         return title;
     }
+
+    const pageTitle = pageNameAsTitle(page);
+    const pageIcon = React.createElement(Icons[pageTitle.replace(" ", "")]);
     
     return (
         <>
-            <div className="topBar">
+
+            <div className="sideBar">
 
                 <div className="logo">
                     <img src="/logo.svg"/>
                     <span>StudyNest</span>
                 </div>
-
-                <div className="pageTitle">
-                    <span>{pageNameAsTitle(page)}</span>
-                    <Icons.dashboardIcon/>
-                </div>
-
-            </div>
-
-            <div className="sideBar">
             
                 <a href="/dashboard" className={`sideBarItem ${(page == "dashboard" ? ("active") : (""))}`}>
-                <Icons.dashboardIcon/>
+                <Icons.Dashboard/>
                     <span>Dashboard</span>
                 </a>
 
-                <div className="sideBarItemDiv"></div>
 
                 <a href="/assignments" className={`sideBarItem ${(page == "assignments" ? ("active") : (""))}`}>
-                <Icons.assignmentIcon/>
+                <Icons.Assignments/>
                     <span>Assignments</span>
                 </a>
 
-                <div className="sideBarItemDiv"></div>
 
                 <a href="/timers" className={`sideBarItem ${(page == "timers" ? ("active") : (""))}`}>
-                <Icons.timerIcon/>
+                <Icons.Timers/>
                     <span>Timers</span>
                 </a>
 
-                <div className="sideBarItemDiv"></div>
 
                 <a href="/forums" className={`sideBarItem ${(page == "forums" ? ("active") : (""))}`}>
-                <Icons.forumIcon/>
+                <Icons.Forums/>
                     <span>Forums</span>
                 </a>
 
-                <div className="sideBarItemDiv"></div>
 
                 <a href="/calculateGrade" className={`sideBarItem ${(page == "calculateGrade" ? ("active") : (""))}`}>
-                <Icons.calculateGradeIcon/>
+                <Icons.CalculateGrade/>
                     <span>Calculate Grade</span>
                 </a>
 

@@ -1,25 +1,29 @@
-export const dashboardIcon = () => {
+export function Dashboard() {
     return (
-        <img src="/icon/dashboard.svg" />
+        <img src="/icon/dashboard.svg"/>
     )
 }
-export const assignmentIcon = () => {
+
+export function Assignments() {
     return (
-        <img src="/icon/assignments.svg" />
+        <img src="/icon/assignments.svg"/>
     )
 }
-export const timerIcon = () => {
+
+export function Timers() {
     return (
-        <img src="/icon/timers.svg" />
+        <img src="/icon/timers.svg"/>
     )
 }
-export const forumIcon = () => {
+
+export function Forums() {
     return (
-        <img src="/icon/forums.svg" />
+        <img src="/icon/forums.svg"/>
     )
 }
-export const calculateGradeIcon = () => {
+
+export function CalculateGrade() {
     return (
-        <img src="/icon/calculate-grade.svg" />
+        <img src="/icon/calculate-grade.svg"/>
     )
 }

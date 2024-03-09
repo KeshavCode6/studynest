@@ -1,10 +1,10 @@
 import Menu from '../../components/Menu'
 
-function Forums() {
+function Timers() {
     
     return (
         <>
-            <Menu page="forums"></Menu>
+            <Menu page="timers"></Menu>
 
             <div className="content">
                 <p>Hi</p>
@@ -13,4 +13,4 @@ function Forums() {
     )
 }
 
-export default Forums;
+export default Timers;
