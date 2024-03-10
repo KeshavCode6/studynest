@@ -8,8 +8,14 @@ function SidebarItem(props) {
         active = "selected"
     }
 
+    function collapseSideBar() {
+        this.setState({
+            sideBarExpanded: false
+        })
+    }
+
     return (
-        <a href={href} className={`sideBarItem ${active}`}>
+        <a href={href} className={`sideBarItem ${active}`} onClick={collapseSideBar}>
             {icon}
             <span>{name}</span>
         </a>

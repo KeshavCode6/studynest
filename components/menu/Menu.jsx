@@ -8,27 +8,38 @@ function Menu(props) {
 
     const { page } = props;
     
-    const [sideBarExpanded, setSideBarExpanded] = useState(true);
+    const [sideBarExpanded, setSideBarExpanded] = useState(false);
 
     function toggleSideBarExpanded() {
         setSideBarExpanded(!sideBarExpanded);
     }
 
     return (
-        <div className="sideBar" style={{"animation": ((sideBarExpanded ? ("sideBarExpand") : ("sideBarCollapse")) + " 0.75s forwards")}}>
 
-            <img src="/logo.svg" alt="Logo" className='text-25 w-[100px] mt-[10px] font-bold'/>
-            <span className="text-[30px] text-primary-white mt-n5 font-bold">StudyNest</span>
+        <>
 
-            <button onClick={toggleSideBarExpanded}> {sideBarExpanded ? 'Close' : 'Open'} </button>
+            <a className="absolute w-[300px] top-[10px] left-[10px]" href='#' onClick={toggleSideBarExpanded}>
+                <Icons.Menu/>
+            </a>
 
-            <SidebarItem href="/dashboard" name="Dashboard" page={page} icon={<Icons.Dashboard />} />
-            <SidebarItem href="/assignments" name="Assignments" page={page} icon={<Icons.Assignments />} />
-            <SidebarItem href="/timers" name="Timers" page={page} icon={<Icons.Timers />} />
-            <SidebarItem href="/forums" name="Forums" page={page} icon={<Icons.Forums />} />
-            <SidebarItem href="/calculateGrade" name="CalculateGrade" page={page} icon={<Icons.CalculateGrade />} />
+            <div className="sideBar" style={{"animation": ((sideBarExpanded ? ("sideBarExpand") : ("sideBarCollapse")) + " 0.5s forwards")}}>
 
-        </div>
+                <img src="/logo.svg" alt="Logo" className='text-25 w-[100px] mt-[10px] font-bold'/>
+                <span className="text-[30px] text-primary-white mt-n5 font-bold">StudyNest</span>
+
+                <a href='#' onClick={toggleSideBarExpanded} className="absolute left-[230px] top-[10px] w-[300px]">
+                    <Icons.X/>
+                </a>
+
+                <SidebarItem href="/dashboard" name="Dashboard" page={page} icon={<Icons.Dashboard />} />
+                    <SidebarItem href="/assignments" name="Assignments" page={page} icon={<Icons.Assignments />} />
+                    <SidebarItem href="/timers" name="Timers" page={page} icon={<Icons.Timers />} />
+                    <SidebarItem href="/forums" name="Forums" page={page} icon={<Icons.Forums />} />
+                <SidebarItem href="/calculateGrade" name="CalculateGrade" page={page} icon={<Icons.CalculateGrade />} />
+
+            </div>
+        </>
+
     );
 }
 

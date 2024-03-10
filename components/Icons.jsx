@@ -27,3 +27,15 @@ export function CalculateGrade() {
         <img src="/icon/calculate-grade.svg" style={{ "width": "13%" }} />
     )
 }
+
+export function X() {
+    return (
+        <img src="/icon/x.svg" style={{ "width": "13%" }} />
+    )
+}
+
+export function Menu() {
+    return (
+        <img src="/icon/menu.svg" style={{ "width": "13%" }} />
+    )
+}
