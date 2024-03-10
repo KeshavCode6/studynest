@@ -1,6 +1,11 @@
 @font-face {
     font-family: montserrat;
-    src: url(../public/montserrat.ttf);
+    src: url(../public/fonts/montserrat.ttf);
+}
+
+@font-face {
+    font-family: seven-segment;
+    src: url(../public/fonts/seven_segment.ttf);
 }
 
 body {
@@ -9,66 +14,71 @@ body {
     background-color: #171222;
 }
 
-.logo {
-    width: 280px;
-    height: 110px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
-
-.logo img {
-    height: 80px;
-    margin-left: 10px;
-}
-
-.logo span {
-    font-size: 25px;
-    color: #D9D9D9;
-    margin-top: -5px;
-    font-weight: bold;
+.widgetContainer {
+    width: calc(100% - 100px);
 }
 
 .sideBar {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: rgb(34, 26, 46);
     width: 280px;
-    height: calc(100vh + 6px);
-    margin-top: -8px;
+    height: 100vh;
+    transform: translateX(0);
 }
+
+@keyframes sideBarCollapse {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes sideBarExpand {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 .sideBarItem {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 5px;
-    padding: 15px;
+    padding-left:10px;
     text-decoration: none;
-    border-radius: 15px;
-    margin-left: 15px;
+    border-radius: 5px;
+    transition: background-color ease 0.25s;
+    height: 50px;
+    margin-bottom: 5px;
+    width: 90%;
 }
 
+
 .sideBarItem:hover {
-    background-color: #202020;
+    background-color: rgb(120, 94, 160);
+}
+.selected, .selected:hover{
+    background-color: rgb(61, 46, 83);
 }
 
 .sideBarItem span {
-    font-size: 20px;
+    font-size: 15px;
     color: #D9D9D9;
     position: relative;
+    font-weight: 500;
 }
 
 .sideBarItem img {
     margin-right: 10px;
     width: 35px;
     margin-left: -3px;
-}
-
-.sideBarItem.active span {
-    text-decoration: underline;
 }
 
 .sideBarItemDiv {
@@ -85,6 +95,9 @@ body {
     bottom: 0;
     width: 280px;
     height: 100px;
+    background-color: rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
 }
 
 .sideBarAccountInfo {
@@ -138,40 +151,10 @@ body {
     margin-right: -15px;
 }
 
-.widgetContainer {
-    position: absolute;
-    top: 10px;
-    left: 300px;
-    width: calc(100% - 300px);
-    height: calc(100% - 130px);
-    display: flex;
-    flex-direction: column;
+.widgetContent * {
+    margin: 10px;
 }
 
-.widgetRow {
-    display: flex;
-    flex-direction: row;
-}
-
-.widgetTitle {
-    color: #D9D9D9;
-    padding: 10px;
-    font-size: 30px;
-    position: relative;
-    z-index: -1;
-    text-align: center;
-    font-weight: bold;
-}
-
-.widgetContent {
-    padding: 10px;
-    position: relative;
-    z-index: -1;
-}
-
-.widget {
-    border: 1px solid #D9D9D9;
-    border-radius: 30px;
-    margin: 20px;
-    flex-grow: 1;
+.dashboardTimeDisplay {
+    font-family: seven-segment;
 }

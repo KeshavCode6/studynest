@@ -2,7 +2,7 @@ function Home() {
 
   return (
     <>
-      <a href={`/auth/google`}>Login</a>
+      <a href={`api/auth/signin`}>Login</a>
     </>
   );
 }
