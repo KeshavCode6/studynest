@@ -1,8 +1,10 @@
-import AssignmentDisplay from '@/components/menu/AssignmentDisplay';
+import AssignmentDisplay from '@/components/AssignmentDisplay';
 import Menu from '@/components/menu/Menu'
 import Widget from '@/components/widget/Widget';
 import WidgetContainer from '@/components/widget/WidgetContainer';
 import WidgetRow from '@/components/widget/WidgetRow';
+
+import * as Icons from "@/components/Icons";
 
 function Dashboard() {
 
@@ -97,7 +99,17 @@ function Dashboard() {
 
                 <WidgetRow className="widgetRow">
                     <Widget title="Start a Timer" grow={1}>
-                        <button className='border border-primary-white rounded-md p-2 text-lg hover:bg-white'>See All</button>
+
+                        <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-white flex flex-row' href="/timers?t=regular">
+                            <span>Regular</span>
+                            <Icons.Timers/>
+                        </a>
+
+                        <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-white flex flex-row' href="/timers?t=pomo">
+                            <span>Pomodoro</span>
+                            <Icons.Timers/>
+                        </a>
+
                     </Widget>
                     <Widget title="Suggested Forum Posts" grow={2}>Widget content!!!</Widget>
                 </WidgetRow>

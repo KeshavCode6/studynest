@@ -13,8 +13,8 @@ function AssignmentDisplay(props) {
             <div>
                 <span className="text-[30px] font-bold">{name}</span>
                 <span className="text-[25px]" style={{color: subject.color}}>({subject.name})</span>
-                <span className="text-[30px]">•</span>
-                <span className="text-[30px]" style={{color: dueDayColor}}>{dueDay}</span>
+                <span className="text-[30px] font-bold">•</span>
+                <span className="text-[30px] font-bold" style={{color: dueDayColor}}>{dueDay}</span>
             </div>
         </>
     )
