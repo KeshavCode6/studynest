@@ -72,7 +72,11 @@ function Dashboard() {
     return (
         <>
 
-            <WidgetContainer className="widgetContainer">
+        <div>
+            
+        </div>
+
+            <WidgetContainer>
 
                 <WidgetRow>
                     <Widget title="Due Soon" grow={2}>
@@ -80,7 +84,7 @@ function Dashboard() {
                         <AssignmentDisplay name="Human Reproduction Prelab" subject={{name: "Biology", color: "#48f542"}} dueDay="Friday"/>
                         <AssignmentDisplay name="Podcast Project" subject={{name: "ELA", color: "#f56942"}} dueDay="Friday"/>
                         <br/>
-                        <a className='border border-primary-white rounded-md p-2 text-lg hover:bg-white' href='/assignments'>See All</a>
+                        <a className='border border-primary-white rounded-md p-2 text-lg hover:bg-white px-5' href='/assignments'>See All</a>
                     </Widget>
 
                     <Widget title="Today Is" grow={1}>
@@ -100,12 +104,12 @@ function Dashboard() {
                 <WidgetRow className="widgetRow">
                     <Widget title="Start a Timer" grow={1}>
 
-                        <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-white flex flex-row' href="/timers?t=regular">
+                        <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-white flex flex-row px-5' href="/timers?t=regular">
                             <span>Regular</span>
                             <Icons.Timers/>
                         </a>
 
-                        <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-white flex flex-row' href="/timers?t=pomo">
+                        <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-white flex flex-row px-5' href="/timers?t=pomo">
                             <span>Pomodoro</span>
                             <Icons.Timers/>
                         </a>
