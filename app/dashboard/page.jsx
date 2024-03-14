@@ -105,34 +105,36 @@ function Dashboard() {
                 <WidgetRow className="widgetRow">
                     <Widget title="Start a Timer" grow={1}>
 
-                        <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-purple-900 flex flex-row px-5' href="/timers?t=regular">
-                            <span className='text-[40px]'>Regular</span>
-                            <Icons.Timers width="50px"/>
-                        </a>
+                        <div className='min-w-[370px]'>
+                            <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-purple-900 flex flex-row justify-center px-5' href="/timers?t=regular">
+                                <span className='text-[40px]'>Regular</span>
+                                <Icons.Timers width="50px"/>
+                            </a>
 
-                        <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-purple-900 flex flex-row px-5' href="/timers?t=pomo">
-                            <span className='text-[40px]'>Pomodoro</span>
-                            <Icons.Timers width="50px"/>
-                        </a>
+                            <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-purple-900 flex flex-row justify-center px-5' href="/timers?t=pomo">
+                                <span className='text-[40px]'>Pomodoro</span>
+                                <Icons.Timers width="50px"/>
+                            </a>
+                        </div>
 
                     </Widget>
                     <Widget title="Suggested Forum Posts" grow={2}>
                         <div className='flex flex-row overflow-y-hidden'>
 
-                            <DashboardForumPost title="How to Do Reproduction?" author={{displayName: "Shaurya", avatarUrl: ""}}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Nisl pretium fusce id velit ut tortor pretium. Nibh venenatis cras sed felis eget velit aliquet sagittis id...
+                            <DashboardForumPost title="Name of First Mongol Emperor?" author={{displayName: "Shaurya", avatarUrl: ""}}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Nisl pretium fusce id velit ut tortor pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </DashboardForumPost>
 
-                            <DashboardForumPost title="How to Do Reproduction?" author={{displayName: "Shaurya", avatarUrl: ""}}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Nisl pretium fusce id velit ut tortor pretium. Nibh venenatis cras sed felis eget velit aliquet sagittis id...
+                            <DashboardForumPost title="What is a Gamete?" author={{displayName: "Shaurya", avatarUrl: ""}}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Nisl pretium fusce id velit ut tortor pretium. Nibh venenatis cras sed felis eget velit aliquet sagittis idLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </DashboardForumPost>
 
-                            <DashboardForumPost title="How to Do Reproduction?" author={{displayName: "Shaurya", avatarUrl: ""}}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Nisl pretium fusce id velit ut tortor pretium. Nibh venenatis cras sed felis eget velit aliquet sagittis id...
+                            <DashboardForumPost title="How Do I Write an MLA Citation?" author={{displayName: "Shaurya", avatarUrl: ""}}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Nisl pretium fusce id velit ut tortor pretium. Nibh venenatis cras sed felis eget velit aliquet sagittis idLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </DashboardForumPost>
 
-                            <DashboardForumPost title="How to Do Reproduction?" author={{displayName: "Shaurya", avatarUrl: ""}}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Nisl pretium fusce id velit ut tortor pretium. Nibh venenatis cras sed felis eget velit aliquet sagittis id...
+                            <DashboardForumPost title={"Using \"Estar\" vs. \"Ser\" in Spanish?"} author={{displayName: "Shaurya", avatarUrl: ""}}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Nisl pretium fusce id velit ut tortor pretium. Nibh venenatis cras sed felis eget velit aliquet sagittis idLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </DashboardForumPost>
 
                         </div>
