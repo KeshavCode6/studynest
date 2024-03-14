@@ -92,7 +92,7 @@ function Dashboard() {
                         <span className="text-6xl font-bold p-3 rounded-lg" style={{color: date.day.color, border: `1px solid ${date.day.color}`}}>{date.day.name}</span>
 
                         <div>
-                            <span className="text-5xl" >{date.month}</span>
+                            <span className="text-5xl">{date.month}</span>
                             <span className="text-4xl">{date.date}</span>
                         </div>
 
@@ -106,12 +106,12 @@ function Dashboard() {
 
                         <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-white flex flex-row px-5' href="/timers?t=regular">
                             <span>Regular</span>
-                            <Icons.Timers/>
+                            <Icons.Timers width="50%"/>
                         </a>
 
                         <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-white flex flex-row px-5' href="/timers?t=pomo">
                             <span>Pomodoro</span>
-                            <Icons.Timers/>
+                            <Icons.Timers width="50%"/>
                         </a>
 
                     </Widget>

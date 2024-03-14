@@ -1,41 +1,50 @@
-export function Dashboard() {
+export function Dashboard(props) {
+
+    const {width} = props;
+
     return (
-        <img src="/icon/dashboard.svg" style={{ "width": "13%" }} />
+        <img src="/icon/dashboard.svg" style={{ "width": width }} />
     )
 }
 
-export function Assignments() {
+export function Assignments(props) {
+    const {width} = props;
     return (
-        <img src="/icon/assignments.svg" style={{ "width": "13%" }} />
+        <img src="/icon/assignments.svg" style={{ "width": width }} />
     )
 }
 
-export function Timers() {
+export function Timers(props) {
+    const {width} = props;
     return (
-        <img src="/icon/timers.svg" style={{ "width": "13%" }} />
+        <img src="/icon/timers.svg" style={{ "width": width }} />
     )
 }
 
-export function Forums() {
+export function Forums(props) {
+    const {width} = props;
     return (
-        <img src="/icon/forums.svg" style={{ "width": "13%" }} />
+        <img src="/icon/forums.svg" style={{ "width": width }} />
     )
 }
 
-export function CalculateGrade() {
+export function CalculateGrade(props) {
+    const {width} = props;
     return (
-        <img src="/icon/calculate-grade.svg" style={{ "width": "13%" }} />
+        <img src="/icon/calculate-grade.svg" style={{ "width": width }} />
     )
 }
 
-export function X() {
+export function X(props) {
+    const {width} = props;
     return (
-        <img src="/icon/x.svg" style={{ "width": "13%" }} />
+        <img src="/icon/x.svg" style={{ "width": width }} />
     )
 }
 
-export function Menu() {
+export function Menu(props) {
+    const {width} = props;
     return (
-        <img src="/icon/menu.svg" style={{ "width": "13%" }} />
+        <img src="/icon/menu.svg" style={{ "width": width }} />
     )
 }
