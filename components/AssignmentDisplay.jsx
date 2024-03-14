@@ -11,6 +11,7 @@ function AssignmentDisplay(props) {
     return (
         <>
             <div>
+                <input type="checkbox" className="w-[25px] h-[25px] accent-purple-900 rounded-[300px] break-all"></input>
                 <span className="text-[30px] font-bold">{name}</span>
                 <span className="text-[25px]" style={{color: subject.color}}>({subject.name})</span>
                 <span className="text-[30px] font-bold">•</span>

@@ -5,6 +5,7 @@ import WidgetContainer from '@/components/widget/WidgetContainer';
 import WidgetRow from '@/components/widget/WidgetRow';
 
 import * as Icons from "@/components/Icons";
+import DashboardForumPost from '@/components/dashboard/DashboardForumPost';
 
 function Dashboard() {
 
@@ -84,7 +85,7 @@ function Dashboard() {
                         <AssignmentDisplay name="Human Reproduction Prelab" subject={{name: "Biology", color: "#48f542"}} dueDay="Friday"/>
                         <AssignmentDisplay name="Podcast Project" subject={{name: "ELA", color: "#f56942"}} dueDay="Friday"/>
                         <br/>
-                        <a className='border border-primary-white rounded-md p-2 text-lg hover:bg-white px-5' href='/assignments'>See All</a>
+                        <a className='border border-primary-white rounded-md p-2 text-lg hover:bg-purple-900 px-5' href='/assignments'>See All</a>
                     </Widget>
 
                     <Widget title="Today Is" grow={1}>
@@ -104,18 +105,38 @@ function Dashboard() {
                 <WidgetRow className="widgetRow">
                     <Widget title="Start a Timer" grow={1}>
 
-                        <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-white flex flex-row px-5' href="/timers?t=regular">
-                            <span>Regular</span>
-                            <Icons.Timers width="50%"/>
+                        <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-purple-900 flex flex-row px-5' href="/timers?t=regular">
+                            <span className='text-[40px]'>Regular</span>
+                            <Icons.Timers width="50px"/>
                         </a>
 
-                        <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-white flex flex-row px-5' href="/timers?t=pomo">
-                            <span>Pomodoro</span>
-                            <Icons.Timers width="50%"/>
+                        <a className='border border-primary-white rounded-md p-2 text-[30px] hover:bg-purple-900 flex flex-row px-5' href="/timers?t=pomo">
+                            <span className='text-[40px]'>Pomodoro</span>
+                            <Icons.Timers width="50px"/>
                         </a>
 
                     </Widget>
-                    <Widget title="Suggested Forum Posts" grow={2}>Widget content!!!</Widget>
+                    <Widget title="Suggested Forum Posts" grow={2}>
+                        <div className='flex flex-row overflow-y-hidden'>
+
+                            <DashboardForumPost title="How to Do Reproduction?" author={{displayName: "Shaurya", avatarUrl: ""}}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Nisl pretium fusce id velit ut tortor pretium. Nibh venenatis cras sed felis eget velit aliquet sagittis id...
+                            </DashboardForumPost>
+
+                            <DashboardForumPost title="How to Do Reproduction?" author={{displayName: "Shaurya", avatarUrl: ""}}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Nisl pretium fusce id velit ut tortor pretium. Nibh venenatis cras sed felis eget velit aliquet sagittis id...
+                            </DashboardForumPost>
+
+                            <DashboardForumPost title="How to Do Reproduction?" author={{displayName: "Shaurya", avatarUrl: ""}}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Nisl pretium fusce id velit ut tortor pretium. Nibh venenatis cras sed felis eget velit aliquet sagittis id...
+                            </DashboardForumPost>
+
+                            <DashboardForumPost title="How to Do Reproduction?" author={{displayName: "Shaurya", avatarUrl: ""}}>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam in arcu cursus euismod quis viverra. Nisl pretium fusce id velit ut tortor pretium. Nibh venenatis cras sed felis eget velit aliquet sagittis id...
+                            </DashboardForumPost>
+
+                        </div>
+                    </Widget>
                 </WidgetRow>
 
             </WidgetContainer>
