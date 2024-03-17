@@ -1,8 +1,11 @@
+"use client"
+const { default: GoogleLogin } = require("@/components/login/googleLogin");
+
 function Home() {
 
   return (
     <>
-      <a href={`api/auth/signin`}>Login</a>
+      <GoogleLogin/>
     </>
   );
 }

@@ -24,7 +24,7 @@ function Menu(props) {
                 </a>
             </div>
 
-            <div className="sideBar absolute top-[60px]" style={{"animation": ((sideBarExpanded ? ("sideBarExpand") : ("sideBarCollapse")) + " 0.5s forwards")}}>
+            <div className="sideBar" style={{"animation": ((sideBarExpanded ? ("sideBarExpand") : ("sideBarCollapse")) + " 0.5s forwards")}}>
 
                 <img src="/logo.svg" alt="Logo" className='text-25 w-[100px] mt-[10px] font-bold'/>
                 <span className="text-[30px] text-primary-white mt-n5 mb-[20px] font-bold">StudyNest</span>
