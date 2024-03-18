@@ -15,8 +15,8 @@ module.exports = {
       colors: {
         'primary-orange': '#FF5722',
         "primary-white": "#D9D9D9", 
-        "widget-purple": "#110d1a", 
-        "topbar-purple": "#2b2240"
+        "widget-purple": "#362C51", 
+        "topbar-purple": "#251E36"
       }
     },
   },

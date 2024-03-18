@@ -4,7 +4,7 @@ function DashboardForumPost(props) {
 
     return (
         <>
-            <a className="flex flex-col border rounded-[10px] w-[90%] p-[5px] h-[250px] overflow-hidden hover:border-[2px]" href="/forums/post?id=0">
+            <a className="flex flex-col  rounded-[10px] w-[90%] p-[5px] h-[250px] overflow-hidden hover:border-[2px]" href="/forums/post?id=0">
 
                 <span className="font-bold text-[1.2rem]">{title}</span>
 
@@ -13,7 +13,7 @@ function DashboardForumPost(props) {
                     <span className="relative right-[10px] top-[3px] text-[1rem] text-gray-400">{author.displayName}</span>
                 </div>
 
-                <span className="relative bottom-[30px]">{children}</span>
+                
             </a>
         </>
     )
